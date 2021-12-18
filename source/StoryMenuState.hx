@@ -59,6 +59,7 @@ class StoryMenuState extends MusicBeatState
 			['Satin-Panties', "High", "Milf"],
 			['Cocoa', 'Eggnog', 'Winter-Horrorland'],
 			['Senpai', 'Roses', 'Thorns']
+			['headspace', 'reverie', 'guilty']
 		];
 		
 		weekCharacters = [
@@ -69,6 +70,7 @@ class StoryMenuState extends MusicBeatState
 			['mom', 'bf', 'gf'],
 			['parents-christmas', 'bf', 'gf'],
 			['senpai', 'bf', 'gf']
+			['omori', 'bf', 'gf']
 		];
 	
 		weekNames = CoolUtil.coolTextFile(Paths.text("weekNames"));
@@ -410,6 +412,10 @@ class StoryMenuState extends MusicBeatState
 				grpWeekCharacters.members[0].setGraphicSize(Std.int(grpWeekCharacters.members[0].width * 0.99));
 
 			case 'senpai':
+				grpWeekCharacters.members[0].offset.set(130, 0);
+				grpWeekCharacters.members[0].setGraphicSize(Std.int(grpWeekCharacters.members[0].width * 1.4));
+				
+			case 'omori':
 				grpWeekCharacters.members[0].offset.set(130, 0);
 				grpWeekCharacters.members[0].setGraphicSize(Std.int(grpWeekCharacters.members[0].width * 1.4));
 
